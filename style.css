@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: radial-gradient(
+    ellipse at 50% 0,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Comforter", cursive;
+}
+
+a {
+  background: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 0.25em 0.5em;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+.slider-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 500%;
+  display: flex;
+  z-index: -1;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
